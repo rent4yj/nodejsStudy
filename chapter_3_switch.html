@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        const input = Number(prompt('숫자를 입력하세요.','숫자'))
+        const number = Number(input)
+        const result = (number >= 0) ? '0 이상의 숫자 입니다.' : '0 보다 작은 숫자 입니다.'
+        alert(result)
+       
+        switch(input %2){
+            case 0:
+                alert('짝수입니다.')
+                break
+            case 1:
+                alert('홀수입니다.')
+                break
+            default:
+                alert('숫자가 아닙니다.')
+                break
+            }
+
+        const date = new Date()
+        const hour = date.getHours()
+
+        switch(true){
+            case hour <11:
+                alert('아침 먹을 시간 입니다.')
+                break
+            case hour <15:
+                alert('점심 먹을 시간 입니다.')
+                break
+            default:
+                alert('저녁 먹을 시간 입니다.')
+                break
+        
+        const result = (number >= 0) ? '0 이상의 숫자 입니다.' : '0 보다 작은 숫자 입니다.'
+        alert(result)
+            
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

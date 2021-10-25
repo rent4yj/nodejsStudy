@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        if(273<100){
+            alert('273<100 => true')
+        }
+
+        alert('종료')
+
+        const date = new Date()
+        const hour = date.getHours()
+
+        if(hour<12){
+            alert('오전입니다.')
+        }else{
+            alert('오후입니다.')
+        }
+
+        if(hour<11){
+            alert('아침 먹을 시간입니다.')
+        }else if(hour<15){
+            alert('점심 먹을 시간입니다.')
+        }else{
+            alert('저녁 먹을 시간입니다.')
+        }
+
+        const input = prompt('정수를 입력하세요','')
+        const rast = input[input.length -1]
+
+        if(rast === "0"||
+        rast === "2"||
+        rast === "4"||
+        rast === "6"||
+        rast === "8"){
+            alert(`${input}은 짝수 입니다.`)
+        } else {
+            alert(`${input}은 홀수 입니다.`)
+
+        }
+
+        if(rast%2 ===0){
+            alert(`%사용 ${input}은 짝수 입니다.`)
+        }else{
+            alert(`%사용 ${input}은 홀수 입니다.`)
+
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
