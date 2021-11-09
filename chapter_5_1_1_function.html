@@ -43,6 +43,21 @@
         console.log(`1부터 100까지의 합 : ${sumAll(1,100)}`)
         console.log(`1부터 100까지의 합 : ${sumAll(1,500)}`)
 
+        function min(array){
+            let output = array[0]
+            for (const item of array){
+                if(output>item){
+                    output = item
+
+                }
+            }
+
+            return output
+        }
+
+        const testArray = [52,273,32,103,275,24,57]
+        console.log(`${testArray}중에서`)
+        console.log(`최소값 = ${min(testArray)}`)
 
     </script>
 </head>

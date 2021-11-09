@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        const pet = {
+            name: '구름',
+            eat(food){
+                alert(this.name + '은/는' + food + '을/를 먹었습니다.')
+            }
+        }
+
+        pet.eat('밥')
+
+        const test = {
+            a: function(){
+                console.log(this)
+            },
+            b:() =>{
+                console.log(this)
+            }
+        }
+
+        test.a()
+        test.b()
+
+        Number.prototype.power = function(n=2){
+            return this.valueOf()**n
+        }
+
+        const a = 12
+        console.log('a.power():',a.power())
+        console.log('a.power(3):',a.power(3))
+        console.log('a.power(4):',a.power(4))
+
+        String.prototype.contain = function(data){
+            return this.indexOf(data)>= 0
+        }
+
+        Array.prototype.contain = function(data){
+            return this.indexOf(data)>= 0
+        }
+
+        const b = '안녕하세요'
+        console.log(`안녕 in 안녕하세요:`,b.contain('안녕'))
+        console.log(`없는데 in 안녕하세요:`,b.contain('없는데'))
+
+        const c = [273,32,103,57,52]
+        console.log(`273 in [273,32,103,57,52] :`,c.contain(273))
+        console.log(`0 in [273,32,103,57,52]:`,c.contain(0))
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

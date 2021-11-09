@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        function callTreeTimes(callback){
+            for(let i = 0; i<3; i++){
+                callback(i)
+            }
+        }
+
+        function print(i){
+            console.log(`${i}번째 함수 호출`)
+        }
+
+        callTreeTimes(print)
+
+        let numbers =[273,52,103,32,57]
+
+        numbers.forEach(function(value,index,array){
+            console.log(`${index}번째요소: ${value}`)
+        })
+
+        numbers = numbers.map(function(value,index,array){
+            return value * value
+        })
+
+        numbers.forEach(console.log)
+
+        const numberss = [0,1,2,3,4,5]
+        const evenNumbers = numberss.filter(function(val){
+            return val%2===0
+        })
+
+        console.log(`원래배열:${numberss}`)
+        console.log(`짝수만 추출:${evenNumbers}`)
+
+        let numbersss = [0,1,2,3,4,5,6,7,8,9]
+
+        numbersss.filter((value)=>value%2===0)
+        .map((value)=>value*value)
+        .forEach((value)=>{
+            console.log(value)
+        })
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
